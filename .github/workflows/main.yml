@@ -37,6 +37,8 @@ jobs:
 
     - name: Build and test project with Maven
       run: mvn -B package --file pom.xml
+    - name: Run Sonar
+      run: 'org.sonarsource.scanner.maven:sonar'
 
     
   publish-job:
