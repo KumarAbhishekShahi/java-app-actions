@@ -5,9 +5,9 @@ on: [pull_request, issues]
 jobs:
   greeting:
     runs-on: ubuntu-latest
-     - uses: jfrog/setup-jfrog-cli@v1
-       env:
-        JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
-     - run: |
-         # Ping the server
-         jfrog rt ping
+      - uses: jfrog/setup-jfrog-cli@v1
+        env:
+          JF_ARTIFACTORY_1: ${{ secrets.artifactory_token_1 }}
+      - run: |
+        # Ping the server
+        jfrog rt ping
