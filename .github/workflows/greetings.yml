@@ -20,7 +20,7 @@ jobs:
       - name: Download binaries
         run: |
           mkdir downloaded
-          jfrog rt u example-repo-local downloaded
+          jfrog rt dl example-repo-local downloaded
           ls downloaded
       - if: always()
         name: Xray Scan
