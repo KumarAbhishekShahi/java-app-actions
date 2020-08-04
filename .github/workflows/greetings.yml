@@ -21,7 +21,7 @@ jobs:
           jfrog rt bp
           mkdir artifacts
           echo "Hello" >> artifacts/readme.txt
-          jfrog rt u artifacts/readme.txt
+          jfrog rt u --spec artifacts/readme.txt
           
       - if: always()
         name: Xray Scan
