@@ -21,7 +21,7 @@ jobs:
           jfrog rt bp
           mkdir artifacts
           echo "Hello" >> artifacts/readme.txt
-          jfrog rt u "artifacts/" my-local-repo
+          jfrog rt u "artifacts/" example-repo-local
           
       - if: always()
         name: Xray Scan
