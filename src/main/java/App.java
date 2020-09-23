@@ -2,7 +2,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        #error for qodeql
+        //error for qodeql
         String userId = "KumarShahi";
         String password = "testpwd";
         DeepThought ourSuperComputer = new DeepThought();
